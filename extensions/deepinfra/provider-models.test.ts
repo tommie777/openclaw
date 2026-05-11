@@ -31,13 +31,17 @@ function makeModelEntry(overrides: Record<string, unknown> = {}) {
 }
 
 function expectedStaticCatalog() {
-  return DEEPINFRA_MODEL_CATALOG.map((model) => ({
-    ...model,
-    compat: {
-      ...model.compat,
-      supportsUsageInStreaming: model.compat?.supportsUsageInStreaming ?? true,
-    },
-  }));
+  const catalog: typeof DEEPINFRA_MODEL_CATALOG = [];
+  for (const model of DEEPINFRA_MODEL_CATALOG) {
+    catalog.push({
+      ...model,
+      compat: {
+        ...model.compat,
+        supportsUsageInStreaming: model.compat?.supportsUsageInStreaming ?? true,
+      },
+    });
+  }
+  return catalog;
 }
 
 async function withFetchPathTest(
