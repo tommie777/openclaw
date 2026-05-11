@@ -171,22 +171,22 @@ describe("openai codex provider", () => {
 
     expectRecordFields(oauth.wizard, "oauth wizard", {
       choiceLabel: "OpenAI Codex Browser Login",
-      groupId: "openai-codex",
-      groupLabel: "OpenAI Codex",
-      groupHint: "ChatGPT/Codex sign-in",
+      groupId: "openai",
+      groupLabel: "OpenAI",
+      groupHint: "Codex/ChatGPT signin or API key",
     });
     expectRecordFields(deviceCode.wizard, "device-code wizard", {
       choiceLabel: "OpenAI Codex Device Pairing",
-      groupId: "openai-codex",
-      groupLabel: "OpenAI Codex",
-      groupHint: "ChatGPT/Codex sign-in",
+      groupId: "openai",
+      groupLabel: "OpenAI",
+      groupHint: "Codex/ChatGPT signin or API key",
     });
     expectRecordFields(apiKey.wizard, "api-key wizard", {
       choiceLabel: "OpenAI API Key Backup",
       choiceHint: "Use an OpenAI API key when your Codex subscription is unavailable",
-      groupId: "openai-codex",
-      groupLabel: "OpenAI Codex",
-      groupHint: "ChatGPT/Codex sign-in",
+      groupId: "openai",
+      groupLabel: "OpenAI",
+      groupHint: "Codex/ChatGPT signin or API key",
     });
   });
 

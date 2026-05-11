@@ -11,6 +11,7 @@ const DEFAULT_PROVIDER_FLOW_SCOPE: ProviderFlowScope = "text-inference";
 
 type ProviderSetupFlowOption = FlowOption & {
   onboardingScopes?: ProviderFlowScope[];
+  onboardingFeatured?: boolean;
 };
 
 type ProviderSetupFlowContribution = FlowContribution & {
@@ -118,6 +119,7 @@ function resolveManifestProviderSetupFlowContributions(params?: {
             ...(choice.assistantVisibility
               ? { assistantVisibility: choice.assistantVisibility }
               : {}),
+            ...(choice.onboardingFeatured ? { onboardingFeatured: true } : {}),
             group: {
               id: groupId,
               label: groupLabel,

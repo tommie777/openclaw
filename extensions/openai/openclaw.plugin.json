@@ -769,9 +769,9 @@
       "choiceLabel": "OpenAI Codex Browser Login",
       "choiceHint": "Sign in with OpenAI in your browser",
       "assistantPriority": -30,
-      "groupId": "openai-codex",
-      "groupLabel": "OpenAI Codex",
-      "groupHint": "ChatGPT/Codex sign-in"
+      "groupId": "openai",
+      "groupLabel": "OpenAI",
+      "groupHint": "Codex/ChatGPT signin or API key"
     },
     {
       "provider": "openai-codex",
@@ -780,9 +780,9 @@
       "choiceLabel": "OpenAI Codex Device Pairing",
       "choiceHint": "Pair in browser with a device code",
       "assistantPriority": -10,
-      "groupId": "openai-codex",
-      "groupLabel": "OpenAI Codex",
-      "groupHint": "ChatGPT/Codex sign-in"
+      "groupId": "openai",
+      "groupLabel": "OpenAI",
+      "groupHint": "Codex/ChatGPT signin or API key"
     },
     {
       "provider": "openai-codex",
@@ -791,9 +791,9 @@
       "choiceLabel": "OpenAI API Key Backup",
       "choiceHint": "Use an OpenAI API key when your Codex subscription is unavailable",
       "assistantPriority": 5,
-      "groupId": "openai-codex",
-      "groupLabel": "OpenAI Codex",
-      "groupHint": "ChatGPT/Codex sign-in",
+      "groupId": "openai",
+      "groupLabel": "OpenAI",
+      "groupHint": "Codex/ChatGPT signin or API key",
       "optionKey": "openaiApiKey",
       "cliFlag": "--openai-api-key",
       "cliOption": "--openai-api-key <key>",
@@ -807,7 +807,8 @@
       "assistantPriority": -40,
       "groupId": "openai",
       "groupLabel": "OpenAI",
-      "groupHint": "Direct API key",
+      "groupHint": "Codex/ChatGPT signin or API key",
+      "onboardingFeatured": true,
       "optionKey": "openaiApiKey",
       "cliFlag": "--openai-api-key",
       "cliOption": "--openai-api-key <key>",
